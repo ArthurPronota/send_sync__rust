@@ -56,7 +56,7 @@ fn main() {
                 let v_clone = v.clone();   // клон Arc
                 move || {
                     println!("Thread: {}, v_clone: {:?}", i, v_clone);
-                    println!("*Thread: {}, v_clone: {:?}\n", i, *v_clone);
+                    println!("Thread: {}, *v_clone: {:?}\n", i, *v_clone);
                 }
             })
         );
